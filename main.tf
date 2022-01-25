@@ -9,6 +9,8 @@ terraform {
 
 provider "aws" {
   region = var.aws_region
+  access_key = "AKIAQ3KDCMCSDH7GNY7I"
+  secret_key = "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"
 }
 resource "aws_s3_bucket" "my-s3-bucket" {
   bucket_prefix = var.bucket_prefix
